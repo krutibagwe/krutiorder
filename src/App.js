@@ -1,31 +1,4 @@
 /*
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
-*/
-
 // src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -39,6 +12,34 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/order-form" element={<OrderForm />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
+*/
+
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LandingPage from './LandingPage';
+import OrderForm from './OrderForm';
+import Home from './Home';
+import Services from './Services';
+import Contact from './Contact';
+import About from './About';
+import './App.css'; // Optional for general styling
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/order-form" element={<OrderForm />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   );
