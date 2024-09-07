@@ -1,3 +1,4 @@
+/*
 import logo from './logo.svg';
 import './App.css';
 
@@ -19,6 +20,27 @@ function App() {
         </a>
       </header>
     </div>
+  );
+}
+
+export default App;
+*/
+
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LandingPage from './LandingPage';
+import OrderForm from './OrderForm';
+import './App.css'; // Optional for general styling
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/order-form" element={<OrderForm />} />
+      </Routes>
+    </Router>
   );
 }
 

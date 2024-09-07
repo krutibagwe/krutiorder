@@ -1,0 +1,157 @@
+/*
+/* src/LandingPage.css 
+.landing-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+.order-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.order-link:hover {
+  background-color: #0056b3;
+}
+
+*/
+
+/* src/LandingPage.css */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;600&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Prevent scrolling if needed */
+  background-color: #f0f4ff; /* Light background color */
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  background: linear-gradient(135deg, #1e3c72, #6976dd); /* Gradient background */
+  color: #ffffff;
+  text-align: center;
+  position: relative; /* Required for absolute positioning of footer */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between; /* Space between brand and links container */
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 1000; /* Ensures the navbar stays on top */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-evenly; /* Evenly distribute nav items */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1; /* Allow the links container to grow and take up space */
+}
+
+.navbar-links li {
+  margin: 0 10px; /* Space between items */
+}
+
+.navbar-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #dd6976; /* Complementary color on hover */
+}
+
+.header {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Full height of the container */
+  padding: 80px 20px;
+  margin-top: 60px; /* Offset for the fixed navbar */
+}
+
+.title {
+  font-size: 4rem; /* Large title for impact */
+  margin: 0;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif; /* Stylish font for the title */
+  color: #ffffff; /* Title color */
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  max-width: 700px; /* Limit width for readability */
+  font-family: 'Roboto', sans-serif;
+  color: #e0e7ff; /* Light color for subtitle */
+}
+
+.order-link {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: #dd6976; /* Complementary color for button */
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.order-link:hover {
+  background-color: #c56b72; /* Darker shade on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #2c2c2c; /* Dark gray for footer */
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.875rem;
+}
