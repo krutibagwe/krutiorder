@@ -44,7 +44,6 @@ body, html {
   align-items: center; /* Center content horizontally */
   height: 100vh; /* Full viewport height */
   width: 100vw; /* Full viewport width */
-  background: linear-gradient(135deg, #1e3c72, #6976dd); /* Gradient background */
   color: #ffffff;
   text-align: center;
   position: relative; /* Required for absolute positioning of footer */

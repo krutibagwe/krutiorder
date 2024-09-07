@@ -41,20 +41,25 @@ class LandingPage extends Component {
 
 export default LandingPage;
 */
-
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './LandingPage.css'; // For styling
+import backgroundImage from './assets/images/background.jpg'; // Adjust the path as necessary
+import './LandingPage.css'; // Ensure to update CSS or use inline styles
 
 class LandingPage extends Component {
   render() {
+    const backgroundStyle = {
+      background: `linear-gradient(135deg, rgba(30, 60, 114, 0.7), rgba(105, 118, 221, 0.7)), url(${backgroundImage}) no-repeat center center`,
+      backgroundSize: 'cover',
+    };
+
     return (
-      <div className="landing-container">
+      <div className="landing-container" style={backgroundStyle}>
         {/* Navbar */}
         <nav className="navbar">
           <div className="navbar-brand">MyWebsite</div>
           <ul className="navbar-links">
-            <li><Link to="/home">Gallery</Link></li>
+            <li><Link to="/home">Home</Link></li>
             <li><Link to="/services">Services</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/contact">Contact</Link></li>
