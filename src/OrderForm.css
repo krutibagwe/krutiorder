@@ -1,68 +1,59 @@
-/* src/OrderForm.css */
-
-/* Ensure html and body take up full height */
 html, body {
   height: 100%;
   margin: 0;
 }
 
-/* Dark-themed background for the entire page */
 body {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  background: linear-gradient(135deg, #1e3c72, #6976dd); /* Background gradient */
-  color: #ffffff; /* Light text color for visibility on dark background */
-  font-family: 'Roboto', sans-serif; /* Ensure font consistency */
+  justify-content: center; 
+  align-items: center; 
+  background: linear-gradient(135deg, #1e3c72, #6976dd); 
+  color: #ffffff; 
+  font-family: 'Roboto', sans-serif; 
 }
 
-/* Form container styles */
 .form-container {
-  width: 80vw; /* Adjust width as a percentage of viewport width */
-  height: 80vw; /* Set height equal to width to make it square */
-  max-width: 400px; /* Set a maximum width for larger screens */
-  max-height: 500px; /* Set a maximum height for larger screens */
-  padding: 40px; /* Add padding for internal spacing */
-  background-color: #ffffff; /* White background for the form container */
-  border-radius: 8px; /* Slightly rounded corners */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Stronger shadow for better contrast */
-  text-align: center; /* Center-align text inside the container */
+  width: 80vw;
+  height: 80vw; 
+  max-width: 400px;
+  max-height: 500px; 
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
+  justify-content: center; 
+  align-items: center;
 }
 
-/* Form heading styles */
 h1 {
-  font-weight: bold; /* Make the heading bold */
-  margin-bottom: 30px; /* Add space below the heading */
-  color: #333; /* Dark color for better readability */
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
 }
 
-/* Form styles */
 form {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Space between form elements */
-  width: 100%; /* Ensure form uses full width of container */
+  gap: 20px;
+  width: 100%;
 }
 
-/* Label styles */
 label {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  color: #333; /* Dark color for labels */
+  color: #333;
 }
 
-/* Input field styles */
 input {
-  padding: 12px; /* Padding for better usability */
-  border: 1px solid #ddd; /* Light border for inputs */
+  padding: 12px; 
+  border: 1px solid #ddd;
   border-radius: 5px;
-  width: 100%; /* Full width of the form element */
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  width: 100%; 
+  box-sizing: border-box; 
 }
 
 /* Button styles */
@@ -73,12 +64,12 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 100%; /* Full width of the form element */
-  font-size: 16px; /* Font size for better appearance */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  width: 100%;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 /* Button hover effect */
 button:hover {
-  background-color: #3a4ee2; /* Slightly darker lilac on hover */
+  background-color: #3a4ee2;
 }

@@ -1,25 +1,3 @@
-/*
-// src/App.js
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LandingPage from './LandingPage';
-import OrderForm from './OrderForm';
-import './App.css'; // Optional for general styling
-
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/order-form" element={<OrderForm />} />
-      </Routes>
-    </Router>
-  );
-}
-
-export default App;
-*/
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from './LandingPage';
@@ -28,7 +6,7 @@ import Home from './Home';
 import Services from './Services';
 import Contact from './Contact';
 import About from './About';
-import './App.css'; // Optional for general styling
+import './App.css'; 
 
 function App() {
   return (

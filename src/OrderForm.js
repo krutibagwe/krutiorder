@@ -1,6 +1,5 @@
-// src/OrderForm.js
 import React, { Component } from 'react';
-import './OrderForm.css'; // Ensure this line is present to apply styles
+import './OrderForm.css'; 
 
 class OrderForm extends Component {
   constructor(props) {
@@ -24,7 +23,6 @@ class OrderForm extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    // Handle form submission logic here
     alert('Order Submitted!');
   }
 
