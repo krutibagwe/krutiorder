@@ -12,6 +12,7 @@ class OrderForm extends Component {
       errorMessage: ''
     };
 
+    // Bind event handler methods to the component instance
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -22,16 +23,13 @@ class OrderForm extends Component {
     return namePattern.test(name);
   }
 
-  // Handle input changes
   handleChange(event) {
     const { name, value } = event.target;
 
-    // Update the state
     this.setState({
       [name]: value,
     });
 
-    // Validate the name field and set error message if needed
     if (name === 'name') {
       if (this.validateName(value)) {
         this.setState({ errorMessage: '' });
@@ -61,7 +59,7 @@ class OrderForm extends Component {
     // Show success alert
     alert('Order Submitted!');
 
-    // Optionally, reset the form fields after submission
+    //reset the form fields after submission
     this.setState({
       name: '',
       address: '',

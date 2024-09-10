@@ -12,6 +12,7 @@ body {
   font-family: 'Roboto', sans-serif; 
 }
 
+/*style form container */
 .form-container {
   width: 80vw;
   height: 80vw; 
@@ -28,6 +29,7 @@ body {
   align-items: center;
 }
 
+/*style the main form */
 h1 {
   font-weight: bold;
   margin-bottom: 30px;
@@ -59,7 +61,7 @@ input {
 /* Button styles */
 button {
   padding: 12px;
-  background-color: #6976dd; /* Lilac color */
+  background-color: #6976dd; 
   color: white;
   border: none;
   border-radius: 5px;
@@ -69,12 +71,11 @@ button {
   transition: background-color 0.3s ease;
 }
 
-/* Button hover effect */
 button:hover {
   background-color: #3a4ee2;
 }
 
-/* Error message styling */
+/*style error message */
 .error-message {
   color: red;
   margin-top: 10px;

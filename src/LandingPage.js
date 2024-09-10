@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import backgroundImage from './assets/images/background.jpg'; // Adjust the path as necessary
-import './LandingPage.css'; // Ensure to update CSS or use inline styles
+import backgroundImage from './assets/images/background.jpg'; 
+import './LandingPage.css'; 
 
 class LandingPage extends Component {
   render() {
     const backgroundStyle = {
+      // Style object for the background image and gradient overlay
       background: `linear-gradient(135deg, rgba(30, 60, 114, 0.7), rgba(105, 118, 221, 0.7)), url(${backgroundImage}) no-repeat center center`,
       backgroundSize: 'cover',
     };
