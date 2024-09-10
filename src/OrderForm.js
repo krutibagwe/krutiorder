@@ -22,13 +22,16 @@ class OrderForm extends Component {
     return namePattern.test(name);
   }
 
+  // Handle input changes
   handleChange(event) {
     const { name, value } = event.target;
 
+    // Update the state
     this.setState({
       [name]: value,
     });
 
+    // Validate the name field and set error message if needed
     if (name === 'name') {
       if (this.validateName(value)) {
         this.setState({ errorMessage: '' });
@@ -42,13 +45,23 @@ class OrderForm extends Component {
   handleSubmit(event) {
     event.preventDefault();
 
+    // Perform final validation
     if (!this.validateName(this.state.name)) {
       this.setState({ errorMessage: 'Name can only contain letters and spaces' });
       return;
     }
 
+    // Log form inputs to the console
+    console.log('Form Submitted:');
+    console.log(`Name: ${this.state.name}`);
+    console.log(`Address: ${this.state.address}`);
+    console.log(`Date: ${this.state.date}`);
+    console.log(`Order Number: ${this.state.orderNumber}`);
+
+    // Show success alert
     alert('Order Submitted!');
 
+    // Optionally, reset the form fields after submission
     this.setState({
       name: '',
       address: '',
